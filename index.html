@@ -8,13 +8,13 @@
 body {
   margin: 0;
   font-family: "Helvetica Neue", sans-serif;
-  background-color: #e6dccf;
+  background-color: #e3d8c8;
   color: #1b1b1b;
 }
 
 header {
-  height: 100vh;
-  background: url("https://images.unsplash.com/photo-1528825871115-3581a5387919") center/cover;
+  height: 90vh;
+  background: url("https://images.unsplash.com/photo-1499186024912-c374ac49bdee") center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,38 +22,56 @@ header {
 }
 
 header div {
-  background: rgba(230,220,207,0.92);
-  padding: 80px;
+  background: rgba(227,216,200,0.93);
+  padding: 70px;
 }
 
 h1 {
-  letter-spacing: 5px;
-  font-size: 3em;
+  letter-spacing: 4px;
+  font-size: 2.8em;
 }
 
 section {
-  padding: 90px 12%;
+  padding: 80px 12%;
 }
 
 .collection {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
 }
 
 .card {
   text-decoration: none;
   color: #1b1b1b;
+  text-align: center;
 }
 
 .card img {
   width: 100%;
-  border-radius: 4px;
+  max-width: 180px;
 }
 
 .card h3 {
-  margin-top: 15px;
+  margin: 15px 0 5px;
   letter-spacing: 1px;
+}
+
+footer {
+  background: #d6c9b6;
+  padding: 60px 12%;
+  text-align: center;
+}
+
+.social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px;
+  padding: 14px 26px;
+  border: 1px solid #1b1b1b;
+  text-decoration: none;
+  color: #1b1b1b;
 }
 </style>
 </head>
@@ -81,11 +99,39 @@ section {
     <a class="card" href="alba.html">
       <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de">
       <h3>ALBA</h3>
-      <p>Fleur blanche · Musc · Bois clair</p>
+      <p>Fleur blanche · Musc</p>
+    </a>
+
+    <a class="card" href="ambra.html">
+      <img src="https://images.unsplash.com/photo-1610465299993-e6675c9f9efa">
+      <h3>AMBRA</h3>
+      <p>Ambre · Vanille</p>
+    </a>
+
+    <a class="card" href="velum.html">
+      <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569">
+      <h3>VELUM</h3>
+      <p>Iris · Cuir</p>
+    </a>
+
+    <a class="card" href="ombra.html">
+      <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
+      <h3>OMBRA</h3>
+      <p>Patchouli · Cacao</p>
     </a>
 
   </div>
 </section>
+
+<footer>
+  <h2>Contact</h2>
+  <p>Une question ? Contactez-nous</p>
+
+  <div class="social">
+    <a href="https://instagram.com/TONINSTAGRAM" target="_blank">Instagram</a>
+    <a href="https://wa.me/33600000000" target="_blank">WhatsApp</a>
+  </div>
+</footer>
 
 </body>
 </html>
