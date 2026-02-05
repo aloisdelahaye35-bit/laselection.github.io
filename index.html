@@ -2,19 +2,19 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>La Sélection Privée – Parfums Niche</title>
+<title>La Sélection – Parfums Niche</title>
 
 <style>
 body {
   margin: 0;
   font-family: "Helvetica Neue", sans-serif;
-  background-color: #f5f1eb;
-  color: #1c1c1c;
+  background-color: #e6dccf;
+  color: #1b1b1b;
 }
 
 header {
   height: 100vh;
-  background: url("https://images.unsplash.com/photo-1610465299993-e6675c9f9efa") center/cover;
+  background: url("https://images.unsplash.com/photo-1528825871115-3581a5387919") center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,37 +22,38 @@ header {
 }
 
 header div {
-  background: rgba(245,241,235,0.85);
-  padding: 60px;
+  background: rgba(230,220,207,0.92);
+  padding: 80px;
 }
 
 h1 {
-  letter-spacing: 4px;
-  font-size: 2.8em;
-}
-
-a.btn {
-  display: inline-block;
-  margin: 15px;
-  padding: 12px 30px;
-  border: 1px solid #1c1c1c;
-  color: #1c1c1c;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-a.btn:hover {
-  background: #1c1c1c;
-  color: #f5f1eb;
+  letter-spacing: 5px;
+  font-size: 3em;
 }
 
 section {
-  padding: 80px 12%;
+  padding: 90px 12%;
 }
 
-.parfum {
-  border-top: 1px solid #ccc;
-  padding: 40px 0;
+.collection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 50px;
+}
+
+.card {
+  text-decoration: none;
+  color: #1b1b1b;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.card h3 {
+  margin-top: 15px;
+  letter-spacing: 1px;
 }
 </style>
 </head>
@@ -61,52 +62,29 @@ section {
 
 <header>
   <div>
-    <h1>LA SÉLECTION PRIVÉE</h1>
+    <h1>LA SÉLECTION</h1>
     <p>Parfums de niche · Sélection confidentielle</p>
-    <a class="btn" href="#collection">Découvrir la collection</a>
   </div>
 </header>
 
 <section>
-  <h2>Notre approche</h2>
-  <p>
-    Une sélection exclusive de parfums de niche et de créations luxueuses,
-    choisies pour leur caractère, leur élégance et leur tenue exceptionnelle.
-    <br><br>
-    Quantités limitées. Disponibilité sur demande.
-  </p>
-</section>
-
-<section id="collection">
   <h2>La collection</h2>
 
-  <div class="parfum">
-    <h3>NOCTIS</h3>
-    <p>Encens · Oud · Ambre</p>
-    <p><strong>145 €</strong></p>
+  <div class="collection">
+
+    <a class="card" href="noctis.html">
+      <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f">
+      <h3>NOCTIS</h3>
+      <p>Encens · Oud · Ambre</p>
+    </a>
+
+    <a class="card" href="alba.html">
+      <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de">
+      <h3>ALBA</h3>
+      <p>Fleur blanche · Musc · Bois clair</p>
+    </a>
+
   </div>
-
-  <div class="parfum">
-    <h3>ALBA</h3>
-    <p>Fleur blanche · Musc · Bois clair</p>
-    <p><strong>135 €</strong></p>
-  </div>
-
-</section>
-
-<section>
-  <h2>Commander</h2>
-  <p>
-    Pour toute commande ou information, contactez-nous directement.
-  </p>
-
-  <a class="btn" href="https://instagram.com/TONINSTAGRAM" target="_blank">
-    Commander sur Instagram
-  </a>
-
-  <a class="btn" href="https://wa.me/33600000000" target="_blank">
-    Commander sur WhatsApp
-  </a>
 </section>
 
 </body>
