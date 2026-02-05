@@ -2,135 +2,159 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>La Sélection – Parfums Niche</title>
+<title>Sakura Sélection – Parfums de Niche</title>
 
 <style>
 body {
   margin: 0;
-  font-family: "Helvetica Neue", sans-serif;
-  background-color: #e3d8c8;
-  color: #1b1b1b;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f1e8dc;
+  color: #1c1c1c;
 }
 
-header {
+/* HERO */
+.hero {
   height: 90vh;
-  background: url("https://images.unsplash.com/photo-1499186024912-c374ac49bdee") center/cover;
+  background: url("https://images.unsplash.com/photo-1522383225653-ed111181a951") center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero-content {
   text-align: center;
+  background: rgba(241,232,220,0.88);
+  padding: 70px 90px;
 }
 
-header div {
-  background: rgba(227,216,200,0.93);
-  padding: 70px;
+.hero h1 {
+  font-size: 3.5em;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
 }
 
-h1 {
-  letter-spacing: 4px;
-  font-size: 2.8em;
-}
-
-section {
-  padding: 80px 12%;
-}
-
-.collection {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 40px;
-}
-
-.card {
-  text-decoration: none;
-  color: #1b1b1b;
-  text-align: center;
-}
-
-.card img {
-  width: 100%;
-  max-width: 180px;
-}
-
-.card h3 {
-  margin: 15px 0 5px;
+.hero p {
+  font-size: 1.1em;
   letter-spacing: 1px;
 }
 
+/* PRESENTATION */
+.presentation {
+  text-align: center;
+  padding: 80px 20%;
+}
+
+.presentation h2 {
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+/* PARFUMS */
+.collection {
+  padding: 60px 8%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 50px;
+}
+
+.product {
+  text-align: center;
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
+.product img {
+  width: 100%;
+  max-width: 220px;
+}
+
+.product h3 {
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+.product p {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+/* FOOTER */
 footer {
-  background: #d6c9b6;
-  padding: 60px 12%;
+  margin-top: 80px;
+  background: #e0d4c2;
+  padding: 50px;
   text-align: center;
 }
 
-.social a {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin: 15px;
+footer a {
+  margin: 10px;
   padding: 14px 26px;
-  border: 1px solid #1b1b1b;
+  border: 1px solid #1c1c1c;
   text-decoration: none;
-  color: #1b1b1b;
+  color: #1c1c1c;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-  <div>
-    <h1>LA SÉLECTION</h1>
-    <p>Parfums de niche · Sélection confidentielle</p>
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
+    <h1>SAKURA SÉLECTION</h1>
+    <p>Parfums de niche · Élégance confidentielle</p>
   </div>
-</header>
+</div>
 
-<section>
-  <h2>La collection</h2>
+<!-- PRESENTATION -->
+<div class="presentation">
+  <h2>NOTRE SÉLECTION</h2>
+  <p>
+    Une collection raffinée de parfums d’exception, choisie pour
+    son caractère, sa subtilité et son sillage unique.
+  </p>
+</div>
 
-  <div class="collection">
+<!-- PARFUMS -->
+<div class="collection">
 
-    <a class="card" href="noctis.html">
-      <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f">
-      <h3>NOCTIS</h3>
-      <p>Encens · Oud · Ambre</p>
-    </a>
+  <a href="noctis.html" class="product">
+    <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f">
+    <h3>NOCTIS</h3>
+    <p>Encens · Oud · Ambre</p>
+  </a>
 
-    <a class="card" href="alba.html">
-      <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de">
-      <h3>ALBA</h3>
-      <p>Fleur blanche · Musc</p>
-    </a>
+  <a href="alba.html" class="product">
+    <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de">
+    <h3>ALBA</h3>
+    <p>Fleur blanche · Musc</p>
+  </a>
 
-    <a class="card" href="ambra.html">
-      <img src="https://images.unsplash.com/photo-1610465299993-e6675c9f9efa">
-      <h3>AMBRA</h3>
-      <p>Ambre · Vanille</p>
-    </a>
+  <a href="ambra.html" class="product">
+    <img src="https://images.unsplash.com/photo-1610465299993-e6675c9f9efa">
+    <h3>AMBRA</h3>
+    <p>Vanille · Résine</p>
+  </a>
 
-    <a class="card" href="velum.html">
-      <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569">
-      <h3>VELUM</h3>
-      <p>Iris · Cuir</p>
-    </a>
+  <a href="velum.html" class="product">
+    <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569">
+    <h3>VELUM</h3>
+    <p>Iris · Cuir</p>
+  </a>
 
-    <a class="card" href="ombra.html">
-      <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
-      <h3>OMBRA</h3>
-      <p>Patchouli · Cacao</p>
-    </a>
+  <a href="ombra.html" class="product">
+    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
+    <h3>OMBRA</h3>
+    <p>Patchouli · Cacao</p>
+  </a>
 
-  </div>
-</section>
+</div>
 
+<!-- FOOTER -->
 <footer>
-  <h2>Contact</h2>
   <p>Une question ? Contactez-nous</p>
-
-  <div class="social">
-    <a href="https://instagram.com/TONINSTAGRAM" target="_blank">Instagram</a>
-    <a href="https://wa.me/33600000000" target="_blank">WhatsApp</a>
-  </div>
+  <a href="https://instagram.com/TONINSTAGRAM">Instagram</a>
+  <a href="https://wa.me/33600000000">WhatsApp</a>
 </footer>
 
 </body>
